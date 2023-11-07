@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+
+:root{
+  --text-color: #cdc6c3;
+  --hover-color: #70efbf;
+  --neon-box-shadow: 0 0 0.5rem #70efbf;
+  --index: calc(1vw + 1vh);
+}
+
+
+body{
+  font-family: "Outfit", sans-serif;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+
+
+}
+
+
+::-webkit-scrollbar{
+  height: 0;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--hover-color);
+  border-radius: 5rem;
+}
+
+

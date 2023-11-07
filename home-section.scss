@@ -1,0 +1,72 @@
+
+
+section.home{
+  padding: 100px 12%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+
+  .home-txt{
+    font-size: calc(var(--index)*1.4);
+    font-weight: 800;
+    text-shadow: 1px 1px 5px #474747;
+    color: #fff;
+
+    span{
+      color: var(--hover-color);
+    }
+
+
+    .btn{
+      margin-top: 2rem;
+      height: 39px;
+      width: 120px;
+    }
+  }
+
+  .hero-img-container{
+    position: relative;
+
+    .hero-img{
+      max-width: 100%;
+      width: 800px;
+      height: auto;
+
+    }
+
+    .moon-img{
+      position: absolute;
+      left: 10%;
+      top: 10%;
+      width: 130px;
+      z-index: -1;
+    }
+
+  }
+
+
+  .earth-img-container{
+    width: 100%;
+
+    .earth-img{
+      position: absolute;
+      width: calc(var(--index)*45);
+      animation: rotate 300s infinite linear;
+    }
+
+  }
+
+
+}
+
+
+@keyframes rotate {
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
